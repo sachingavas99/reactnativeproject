@@ -4,11 +4,10 @@ Summary:
 Login Contains 2 Parameters like Phone Number and Password.
 
 Phone Number we have stored with name 'mobile' and password with name 'password'.
-onChange function checks the target value entry then using onLogin fields validate like mobile number is not empty, is only 10 digit number.
-Password is not empty.
+onChange function checks the targeted value and onLogin check validation for fields such as mobile number is not empty, max 10 digit number, password is not empty.
 
 if there is no error then token gets stored locally in setItem and store in userData using dispatch of redux.
-Then User can moved to Home Page.
+Then User can move to Home Page.
 If User Forgot password then it is necessary to enter mobile number in input field and then click to forgot password. if user without entering Mobile number in input field clicks forgot link, a error message will appear that "Please enter valid phone number" then only forgot password can be proceeded.
 
 OnClick of forgot link,"setForgetPasswordModal" will become true and Modal of forgot Password which is in "components/modal/ResetPasswordModal" folder appear.
